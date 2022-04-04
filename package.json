@@ -8,12 +8,16 @@
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "quasar build",
+    "firemu": "firebase emulators:start --import=./dummy-data --export-on-exit"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "@vueuse/firebase": "^8.2.2",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "firebase": "^9.6.10",
     "pinia": "^2.0.11",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",
@@ -28,7 +32,8 @@
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^8.5.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "workbox-webpack-plugin": "^6.5.2"
   },
   "browserslist": [
     "last 10 Chrome versions",

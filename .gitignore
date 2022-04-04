@@ -33,3 +33,6 @@ yarn-error.log*
 *.sln
 *.code-workspace
 .vscode
+
+# Firebase
+dummy-data
